@@ -133,5 +133,4 @@ gympass-scraper/
 
 **Ricardo Pereira** – Desenvolvedor Python / Automação de Processos
 
-```
 
