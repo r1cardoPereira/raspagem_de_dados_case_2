@@ -1,4 +1,4 @@
-# Gympass Academy Scraper
+# Academy Scraper
 
 Automação para consulta de academias cadastradas no Gympass por CEP, coletando informações de **nome, distância, horário de funcionamento, atividades e planos**.  
 
