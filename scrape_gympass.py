@@ -5,6 +5,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import (
     TimeoutException, NoSuchElementException, WebDriverException, ElementClickInterceptedException
@@ -142,10 +144,10 @@ def scrape_gympass_data(ceps_file_path):
     # Inicia webdriver (ajuste se usar chromedriver em caminho custom)
     try:
         options = webdriver.ChromeOptions()
-        # Sugestões: rodar com user-agent customizado, desativar extensões, etc.
         options.add_argument("--start-maximized")
-        # options.add_argument("--headless=new")  # descomente se quiser headless (risco de mais bloqueios)
-        driver = webdriver.Chrome(options=options)
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    
+    
     except WebDriverException as e:
         print("Erro ao iniciar ChromeDriver:", e)
         return
