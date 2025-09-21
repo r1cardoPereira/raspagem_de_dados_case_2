@@ -9,8 +9,7 @@ O script utiliza **Selenium** para navegação e interação com o site e **Beau
 ## Pré-requisitos
 
 - Python 3.10 ou superior
-- Chrome ou Chromium instalado
-- [ChromeDriver](https://chromedriver.chromium.org/downloads) compatível com sua versão do Chrome
+- Navegador Chrome ou Chromium instalado
 - pip (gerenciador de pacotes Python)
 
 ---
